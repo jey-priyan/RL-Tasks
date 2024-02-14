@@ -1,38 +1,130 @@
-.App {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #DD58D6 0%, #9336B4 100%);
+  padding: 0 20px;
+}
+
+.img1 {
+  color: #982176;
+  margin-top: -460px;
+  padding-left: 15px;
+  margin-right: 20px;
+}
+
+.image-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.form-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #982176;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px);
+  margin-right: 10px;
+  animation: fadeIn 0.5s ease;
+  margin-top: 40px;
+}
+
+.form-section .content {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
+  }
+
+.input-wrapper p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-wrapper input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width: 325px;
+  padding: 10px;
+  background-color: #982176;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #982176;
+}
+
+.social-icons {
+  margin-top: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.social-icons a {
+  margin-right: 10px;
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.social-icons a:hover {
+  color: #982176;
+}
+
+.sign {
+  text-align: center;
+}
+
+.err1 {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  margin-left: 45px;
+}
+
+.err {
+  color: red;
+  font-size: smaller;
+}
+
+.cen {
+  text-align: center;
+  color: linear-gradient(135deg, #DD58D6 0%, #9336B4 100%);
+}
+
+
+@media (max-width: 768px) {
+  .ing2 {
+    display: none; 
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
